@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: js_image
+  labels:
+    app: js_image
+spec:
+  containers:
+    - name: js_image
+      image: sriman99/js_image:v1
+      ports:
+        - containerPort: 8080
